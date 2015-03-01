@@ -1,7 +1,7 @@
-speed = raw_input("Please enter a number to represent miles/hour: ")
+speed = input("Please enter a number to represent miles/hour: ")
 
 while not speed.isdigit():
-    speed = raw_input("A number to represent miles/hour, please: ")
+    speed = input("A number to represent miles/hour, please: ")
 speed = float(speed)
 
 # meter = 117.647 barleycorns
@@ -23,9 +23,9 @@ mach = (speed * 1.46666666667) / 1130
 psl = (speed * 0.44704) / 299792458
 
 
-print "_" * 70 + "\n" + "Original speed in mph is: %.1f" % speed
-print "\nConverted to barleycorns per day is: %.3e" % bd
-print "Converted to furlongs per fortnight is: %.3e" % ff
-print "Converted to Mach number is: %.3e" % mach
-print "Converted to percentage of the speed of light is: %.3e" % psl
-print "_" * 70 + "\n" + "Thanks for playing, I hope you learned something, I did!"
+print("_" * 70 + "\n" + "Original speed in mph is: %.1f" % speed)
+print("\nConverted to barleycorns per day is: %.3e" % bd)
+print("Converted to furlongs per fortnight is: %.3e" % ff)
+print("Converted to Mach number is: %.3e" % mach)
+print("Converted to percentage of the speed of light is: %.3e" % psl)
+print("_" * 70 + "\n" + "Thanks for playing, I hope you learned something, I did!")

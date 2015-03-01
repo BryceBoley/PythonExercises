@@ -1,0 +1,8 @@
+def frange(start, stop, increment):
+
+    while start < stop:
+        yield start
+        start += increment
+
+for i in frange(0, 4, 0.5):
+    print(i)
